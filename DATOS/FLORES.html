@@ -7,12 +7,63 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/flowers.png" type="image/x-icon">
     <title>FLORES</title>
+    <style>
+    /* Estilo para la frase larga */
+    .frase-larga {
+        position: absolute; /* Para que quede sobre las flores */
+        top: 20px;          /* Ajusta la distancia desde arriba */
+        left: 50%;          /* Centrar horizontalmente */
+        transform: translateX(-50%);
+        
+        color: white;       /* Letras blancas */
+        font-size: 22px;    /* Ajusta según lo grande que quieras */
+        font-family: 'Georgia', 'Times New Roman', serif; /* Elegante y romántico */
+        font-style: italic; /* Cursiva para romanticismo */
+        text-align: center; 
+        width: 80%;         
+        line-height: 1.4;   /* Altura de línea para elegancia */
+        letter-spacing: 2px; /* Espacio entre letras */
+        
+        /* Sombra roja romántica */
+        text-shadow: 2px 2px 5px rgba(255,0,0,0.8), 
+                     -2px -2px 5px rgba(255,0,0,0.8);
+        
+        word-wrap: break-word; 
+        z-index: 1000;     
+    }
+</style>
+
 </head>
 
-<body class="container">
-    <audio src="/DATOS/img/Floricienta.mp3" autoplay loop>
-    Tu navegador no soporta el elemento de audio.
-    </audio>
+<audio autoplay loop>
+    <source src="img/Floricienta.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+</audio>
+
+
+
+ <div class="frase-larga">
+    <!-- Bloque 1: izquierda -->
+    <p class="frase-romantica" style="text-align: left;">
+        El 21 de septiembre despierta la primavera con su encanto,  
+        y mis pensamientos vuelan hacia ti como mariposas en el viento.  
+        Tus sonrisas iluminan mis días como el sol en la mañana,  
+        y cada flor que veo me recuerda a tu esencia delicada.
+        Que los rayos de luz iluminen cada instante de nuestra historia,  
+        y que el perfume de las flores nos envuelva en un abrazo de sueños.  
+        Así como la naturaleza renace después de la lluvia,  
+        mi amor por ti se eleva cada día, fuerte y lleno de vida.
+        En este día especial, te prometo cuidado y pasión,  
+        alimentar nuestra unión con ternura y paciencia,  
+        y bailar con la vida entre pétalos y risas,  
+        porque tú eres la primavera que llena mi alma de alegría.
+        Que cada instante que compartimos siga floreciendo  
+        como un jardín eterno en nuestro corazón.
+    </p>
+</div>
+
+
+
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
